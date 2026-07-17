@@ -1,0 +1,221 @@
+# As a condition of accessing this website, you agree to abide by the following
+# content signals:
+
+# (a)  If a Content-Signal = yes, you may collect content for the corresponding
+#      use.
+# (b)  If a Content-Signal = no, you may not collect content for the
+#      corresponding use.
+# (c)  If the website operator does not include a Content-Signal for a
+#      corresponding use, the website operator neither grants nor restricts
+#      permission via Content-Signal with respect to the corresponding use.
+
+# The content signals and their meanings are:
+
+# search:   building a search index and providing search results (e.g., returning
+#           hyperlinks and short excerpts from your website's contents). Search does not
+#           include providing AI-generated search summaries.
+# ai-input: inputting content into one or more AI models (e.g., retrieval
+#           augmented generation, grounding, or other real-time taking of content for
+#           generative AI search answers).
+# ai-train: training or fine-tuning AI models.
+# use:      how AI systems may consume the content (immediate, reference, or full).
+
+# ANY RESTRICTIONS EXPRESSED VIA CONTENT SIGNALS ARE EXPRESS RESERVATIONS OF
+# RIGHTS UNDER ARTICLE 4 OF THE EUROPEAN UNION DIRECTIVE 2019/790 ON COPYRIGHT
+# AND RELATED RIGHTS IN THE DIGITAL SINGLE MARKET.
+
+# BEGIN Cloudflare Managed content
+
+User-agent: *
+Content-Signal: search=yes,ai-train=no,use=reference
+Allow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: CloudflareBrowserRenderingCrawler
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: meta-externalagent
+Disallow: /
+
+# END Cloudflare Managed Content
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#070708" />
+  <meta name="description" content="Vexum — junior penetration tester & bug bounty hunter. Offensive security portfolio." />
+  <title>VEXUM // ARE YOU 0 OR 1?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+<script defer src="/static/js/bundle.js"></script><script>
+if(window.self!==window.top){
+  var s=document.createElement("script");s.src="/visual-edit-overlay.js";document.head.appendChild(s);
+  window.tailwind=window.tailwind||{};tailwind.config={corePlugins:{preflight:false}};var t=document.createElement("script");t.src="https://cdn.tailwindcss.com";document.head.appendChild(t);
+}
+</script>
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav" data-testid="main-nav">
+    <a href="#home" class="nav__logo" data-testid="nav-logo">VX<span class="nav__logo-dot">_</span></a>
+    <button class="nav__burger" data-testid="nav-burger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav__links" data-testid="nav-links">
+      <a href="#home" data-testid="nav-link-home"><span>00</span>HOME</a>
+      <a href="#about" data-testid="nav-link-about"><span>01</span>ABOUT</a>
+      <a href="#skills" data-testid="nav-link-skills"><span>02</span>SKILLS</a>
+      <a href="#certs" data-testid="nav-link-certs"><span>03</span>CERTS</a>
+      <a href="#projects" data-testid="nav-link-projects"><span>04</span>PROJECTS</a>
+      <a href="blog.html" data-testid="nav-link-blog" class="nav__blog"><span>05</span>BLOG</a>
+    </nav>
+  </header>
+
+  <main class="snap-container" id="snap">
+
+    <!-- 01 HERO -->
+    <section class="section hero" id="home" data-testid="section-hero">
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero__inner">
+        <p class="hero__pre mono" data-testid="hero-boot-line">
+          <span class="hero__prompt">root@vexum:~$</span> ./init_identity.sh
+        </p>
+        <h1 class="hero__title" data-testid="hero-glitch-title">
+          <span class="glitch" id="glitch-text" data-text=""></span><span class="caret" id="hero-caret">█</span>
+        </h1>
+        <p class="hero__sub mono" data-testid="hero-subtitle">
+          <span class="red">&gt;</span> offensive security // penetration testing // bug bounty
+        </p>
+      </div>
+      <a href="#about" class="hero__scroll mono" data-testid="hero-scroll-hint">
+        <span class="hero__scroll-line"></span>SCROLL_TO_DECRYPT
+      </a>
+      <div class="hero__coords mono" aria-hidden="true">
+        <span>LAT ██.████</span><span>LON ██.████</span><span id="hero-clock">00:00:00</span>
+      </div>
+    </section>
+
+    <!-- 02 ABOUT -->
+    <section class="section about" id="about" data-testid="section-about">
+      <div class="section__tag mono"><span class="red">01</span> // ABOUT_ROOT</div>
+      <div class="about__grid">
+        <div class="about__left reveal">
+          <h2 class="about__name" data-testid="about-name">Vexum</h2>
+          <p class="about__alias mono">alias: <span class="red">vx</span> — human, probably</p>
+          <div class="about__meta mono">
+            <div><span class="dim">uid</span> 1337</div>
+            <div><span class="dim">age</span> 17</div>
+            <div><span class="dim">shell</span> /bin/zsh</div>
+          </div>
+        </div>
+        <div class="about__right reveal reveal--d1">
+          <div class="terminal" data-testid="about-terminal">
+            <div class="terminal__bar">
+              <span class="terminal__dot terminal__dot--r"></span>
+              <span class="terminal__dot terminal__dot--y"></span>
+              <span class="terminal__dot terminal__dot--g"></span>
+              <span class="terminal__bar-title mono">vexum@system: ~</span>
+            </div>
+            <div class="terminal__body mono" id="about-term-body">
+              <p class="term-line"><span class="term-prompt">root@system:~$</span> cat whoami.txt</p>
+              <p class="term-line term-out" data-testid="about-bio">Security enthusiast, especially into offensive security. Currently a part-time junior penetration tester and bug bounty hunter. 17 years old.</p>
+              <p class="term-line term-gap"><span class="term-prompt">root@system:~$</span> ./execute_stats.sh</p>
+              <p class="term-line term-out"><span class="red">&gt;</span> junior penetration tester</p>
+              <p class="term-line term-out"><span class="red">&gt;</span> bug hunter</p>
+              <p class="term-line"><span class="term-prompt">root@system:~$</span> <span class="caret caret--term">█</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 SKILLS -->
+    <section class="section skills" id="skills" data-testid="section-skills">
+      <div class="section__tag mono"><span class="red">02</span> // SKILLS_&amp;_TOOLS</div>
+      <h2 class="section__title reveal">LOADED<br /><span class="outline">MODULES</span></h2>
+      <p class="skills__cmd mono reveal reveal--d1"><span class="term-prompt">root@system:~$</span> ls /opt/arsenal/</p>
+      <div class="skills__row" data-testid="skills-row">
+        <div class="chip reveal reveal--d1" data-testid="skill-linux"><span class="chip__ico">[&gt;]</span>Linux Basics</div>
+        <div class="chip reveal reveal--d2" data-testid="skill-network"><span class="chip__ico">[~]</span>Network Fundamentals</div>
+        <div class="chip reveal reveal--d3" data-testid="skill-programming"><span class="chip__ico">[#]</span>Programming Basics <em>HTML / JS / Python</em></div>
+        <div class="chip reveal reveal--d4" data-testid="skill-owasp"><span class="chip__ico">[!]</span>OWASP Top 10</div>
+        <div class="chip reveal reveal--d5" data-testid="skill-burp"><span class="chip__ico">[*]</span>Burp Suite</div>
+      </div>
+    </section>
+
+    <!-- 04 CERTS -->
+    <section class="section certs" id="certs" data-testid="section-certs">
+      <div class="section__tag mono"><span class="red">03</span> // CERTIFICATIONS</div>
+      <h2 class="section__title reveal">PROOF OF<br /><span class="outline">WORK</span></h2>
+      <div class="certs__row">
+        <a class="cert reveal reveal--d1" data-testid="cert-maharatech" href="https://maharatech.gov.eg/mod/customcert/view.php?id=14361&amp;downloadown=1" target="_blank" rel="noopener noreferrer">
+          <div class="cert__idx mono">CERT_001</div>
+          <h3 class="cert__name">ITI / MaharaTech<br />Certificate</h3>
+          <div class="cert__foot mono"><span class="dim">issuer:</span> maharatech.gov.eg <span class="cert__arrow">-&gt;</span></div>
+        </a>
+        <a class="cert reveal reveal--d2" data-testid="cert-freecodecamp" href="https://www.freecodecamp.org/certification/abdelrahman-omar/javascript-algorithms-and-data-structures" target="_blank" rel="noopener noreferrer">
+          <div class="cert__idx mono">CERT_002</div>
+          <h3 class="cert__name">freeCodeCamp<br />JS Algorithms &amp; Data Structures</h3>
+          <div class="cert__foot mono"><span class="dim">issuer:</span> freecodecamp.org <span class="cert__arrow">-&gt;</span></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- 05 PROJECTS -->
+    <section class="section projects" id="projects" data-testid="section-projects">
+      <div class="section__tag mono"><span class="red">04</span> // PROJECTS</div>
+      <h2 class="section__title reveal">FIELD<br /><span class="outline">OPS</span></h2>
+      <div class="projects__empty mono reveal reveal--d1" data-testid="projects-empty">
+        <p class="term-line"><span class="term-prompt">root@system:~$</span> ls ./projects/ -la</p>
+        <p class="projects__none">[ NO ENTRIES YET ]</p>
+        <p class="dim projects__hint">// operations in progress. check back later_</p>
+      </div>
+    </section>
+
+    <!-- 06 SOCIAL -->
+    <section class="section social" id="social" data-testid="section-social">
+      <div class="section__tag mono"><span class="red">05</span> // ESTABLISH_UPLINK</div>
+      <h2 class="section__title reveal">OPEN A<br /><span class="outline">CHANNEL</span></h2>
+      <a class="social__link mono reveal reveal--d1" data-testid="social-linkedin" href="https://www.linkedin.com/in/abdelrahman-omar-sec/" target="_blank" rel="noopener noreferrer">
+        <span class="term-prompt">root@system:~$</span> ssh <span class="social__handle">linkedin.com/in/abdelrahman-omar-sec</span>
+        <span class="social__arrow">[&gt;]</span>
+      </a>
+      <footer class="footer mono" data-testid="footer">
+        <span>© 2026 VEXUM</span>
+        <span class="dim">// no system is safe</span>
+      </footer>
+    </section>
+
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="hero3d.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

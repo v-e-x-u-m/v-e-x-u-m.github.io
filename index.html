@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#070708" />
+  <meta name="description" content="Vexum — junior penetration tester & bug bounty hunter. Offensive security portfolio." />
+  <title>Vexum</title>
+  <link rel="icon" type="image/png" href="https://preview.redd.it/i-made-a-clean-valorant-desktop-icon-v0-shpmpl91zk761.png?width=1000&amp;format=png&amp;auto=webp&amp;s=6f81f6cacaa9e6fc0b25c2a44f56ab54c6395810" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+<script defer src="bundle.js"></script><script>
+if(window.self!==window.top){
+  var s=document.createElement("script");s.src="/visual-edit-overlay.js";document.head.appendChild(s);
+  window.tailwind=window.tailwind||{};tailwind.config={corePlugins:{preflight:false}};var t=document.createElement("script");t.src="https://cdn.tailwindcss.com";document.head.appendChild(t);
+}
+</script>
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav" data-testid="main-nav">
+    <a href="index.html#home" class="nav__logo" data-testid="nav-logo">vexum<span class="nav__logo-dot">_</span></a>
+    <button class="nav__burger" data-testid="nav-burger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav__links" data-testid="nav-links">
+      <a href="index.html#home" data-testid="nav-link-home"><span>00</span>HOME</a>
+      <a href="index.html#about" data-testid="nav-link-about"><span>01</span>ABOUT</a>
+      <a href="index.html#skills" data-testid="nav-link-skills"><span>02</span>SKILLS</a>
+      <a href="index.html#certs" data-testid="nav-link-certs"><span>03</span>CERTS</a>
+      <a href="https://vexum.medium.com/" target="_blank" rel="noopener noreferrer" data-testid="nav-link-blog" class="nav__blog"><span>04</span>BLOG</a>
+    </nav>
+  </header>
+
+  <main class="snap-container" id="snap">
+
+    <!-- 01 HERO -->
+    <section class="section hero" id="home" data-testid="section-hero">
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero__inner">
+        <p class="hero__pre mono" data-testid="hero-boot-line">
+          <span class="hero__prompt">root@vexum:~$</span> ./init_identity.sh
+        </p>
+        <h1 class="hero__title" data-testid="hero-glitch-title">
+          <span class="glitch" id="glitch-text" data-text=""></span><span class="caret" id="hero-caret">█</span>
+        </h1>
+        <p style="font-family: var(--font-display); font-size: clamp(1rem, 2vw, 1.5rem); letter-spacing: 0.05em; color: var(--text-primary); margin-top: 0.8rem; opacity: 0; animation: fadeIn 0.8s ease 2.5s forwards;">
+          I choose the second option ,always.
+        </p>
+        <p class="hero__sub mono" data-testid="hero-subtitle">
+          <span class="red">&gt;</span> offensive security // penetration testing // bug bounty
+        </p>
+      </div>
+      <a href="index.html#about" class="hero__scroll mono" data-testid="hero-scroll-hint">
+        <span class="hero__scroll-line"></span>SCROLL_TO_DECRYPT
+      </a>
+      <div class="hero__coords mono" aria-hidden="true">
+        <span>LAT ██.████</span><span>LON ██.████</span><span id="hero-clock">00:00:00</span>
+      </div>
+    </section>
+
+    <!-- 02 ABOUT -->
+    <section class="section about" id="about" data-testid="section-about">
+      <div class="section__tag mono"><span class="red">01</span> // ABOUT_ROOT</div>
+      <div class="about__grid">
+        <div class="about__left reveal">
+          <h2 class="about__name" data-testid="about-name">Abdelrahman Omar</h2>
+          <p class="about__alias mono">alias: <span class="red">vexum</span> — human, probably</p>
+          <div class="about__meta mono">
+            <div><span class="dim">uid</span> 1337</div>
+            <div><span class="dim">age</span> 17</div>
+            <div><span class="dim">shell</span> /bin/zsh</div>
+          </div>
+        </div>
+        <div class="about__right reveal reveal--d1">
+          <div class="terminal" data-testid="about-terminal">
+            <div class="terminal__bar">
+              <span class="terminal__dot terminal__dot--r"></span>
+              <span class="terminal__dot terminal__dot--y"></span>
+              <span class="terminal__dot terminal__dot--g"></span>
+              <span class="terminal__bar-title mono">root@vexum: ~</span>
+            </div>
+            <div class="terminal__body mono" id="about-term-body">
+              <p class="term-line"><span class="term-prompt">root@vexum:~$</span> cat whoami.txt</p>
+              <p class="term-line term-out" data-testid="about-bio">
+                Abdelrahman Omar, 17 age — high school student &amp; security enthusiast with a primary focus on offensive security.
+                <br><br>
+                Currently working part-time as a bug bounty hunter, with hands-on focus on web application security. 
+                <br><br>
+                Self-taught through structured practice: CTFs, real-world bug hunting programs, and continuous research into offensive security methodologies.
+              </p>
+              <p class="term-line term-gap"><span class="term-prompt">root@vexum:~$</span> ./execute_stats.sh</p>
+              <p class="term-line term-out"><span class="red">&gt;</span> junior penetration tester</p>
+              <p class="term-line term-out"><span class="red">&gt;</span> bug hunter</p>
+              <p class="term-line"><span class="term-prompt">root@vexum:~$</span> <span class="caret caret--term">█</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 SKILLS -->
+    <section class="section skills" id="skills" data-testid="section-skills">
+      <div class="section__tag mono"><span class="red">02</span> // SKILLS_&amp;_TOOLS</div>
+      <h2 class="section__title reveal">LOADED<br /><span class="outline">MODULES</span></h2>
+      <p class="skills__cmd mono reveal reveal--d1"><span class="term-prompt">root@vexum:~$</span> ls /opt/arsenal/</p>
+      <div class="skills__traditional reveal" data-testid="skills-row">
+        
+        <div class="skills-group">
+          <h3 class="skills-group__title mono">SECURITY &amp; INFRASTRUCTURE</h3>
+          <div class="skills-grid">
+            
+            <div class="skill-card">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" class="skill-card__logo" />
+              <div class="skill-card__info">
+                <div class="skill-card__name">Linux Basics</div>
+                <div class="skill-card__status mono"><span class="red">●</span> ACTIVE</div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/networkx/networkx-original.svg" alt="Network" class="skill-card__logo" style="filter: grayscale(1) brightness(2) contrast(0.5); width:32px; height:32px;" />
+              <div class="skill-card__info">
+                <div class="skill-card__name">Network Fundamentals</div>
+                <div class="skill-card__status mono"><span class="red">●</span> ACTIVE</div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <img src="https://www.datocms-assets.com/85623/1719639363-logo-1.png?auto=format" alt="OWASP Top 10" class="skill-card__logo" style="border-radius: 4px;" />
+              <div class="skill-card__info">
+                <div class="skill-card__name">OWASP Top 10</div>
+                <div class="skill-card__status skill-card__status--learn mono">◌ LEARNING</div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <img src="https://www.dockhunt.com/_next/image?url=https%3A%2F%2Fdockhunt-images.nyc3.cdn.digitaloceanspaces.com%2Ff5f43386-11d9-4978-b8f0-1497a875881e&w=384&q=75" alt="Burp Suite" class="skill-card__logo" style="border-radius: 4px;" />
+              <div class="skill-card__info">
+                <div class="skill-card__name">Burp Suite</div>
+                <div class="skill-card__status skill-card__status--learn mono">◌ LEARNING</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <h3 class="skills-group__title mono">PROGRAMMING</h3>
+          <div class="skills-grid">
+            
+            <div class="skill-card">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="skill-card__logo" />
+              <div class="skill-card__info">
+                <div class="skill-card__name">HTML5</div>
+                <div class="skill-card__status mono"><span class="red">●</span> ACTIVE</div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="skill-card__logo" />
+              <div class="skill-card__info">
+                <div class="skill-card__name">JavaScript</div>
+                <div class="skill-card__status mono"><span class="red">●</span> ACTIVE</div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="skill-card__logo" />
+              <div class="skill-card__info">
+                <div class="skill-card__name">Python</div>
+                <div class="skill-card__status mono"><span class="red">●</span> ACTIVE</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- 04 CERTS -->
+    <section class="section certs" id="certs" data-testid="section-certs">
+      <div class="section__tag mono"><span class="red">03</span> // CERTIFICATIONS</div>
+      <h2 class="section__title reveal">PROOF OF<br /><span class="outline">WORK</span></h2>
+      <div class="certs__row">
+        <a class="cert reveal reveal--d1" data-testid="cert-maharatech" href="https://maharatech.gov.eg/mod/customcert/view.php?id=14361&amp;downloadown=1" target="_blank" rel="noopener noreferrer">
+          <div class="cert__idx mono">CERT_001</div>
+          <h3 class="cert__name">Ubuntu Linux<br />Essentials</h3>
+          <div class="cert__foot mono"><span class="dim">issuer:</span> maharatech.gov.eg <span class="cert__arrow">-&gt;</span></div>
+        </a>
+        <a class="cert reveal reveal--d2" data-testid="cert-freecodecamp" href="https://www.freecodecamp.org/certification/abdelrahman-omar/javascript-algorithms-and-data-structures" target="_blank" rel="noopener noreferrer">
+          <div class="cert__idx mono">CERT_002</div>
+          <h3 class="cert__name">JavaScript Algorithms<br />and Data Structures</h3>
+          <div class="cert__foot mono"><span class="dim">issuer:</span> freecodecamp.org <span class="cert__arrow">-&gt;</span></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- 05 SOCIAL -->
+    <section class="section social" id="social" data-testid="section-social">
+      <div class="section__tag mono"><span class="red">04</span> // ESTABLISH_UPLINK</div>
+      <h2 class="section__title reveal">OPEN A<br /><span class="outline">CHANNEL</span></h2>
+      <a class="social__link mono reveal reveal--d1" data-testid="social-linkedin" href="https://www.linkedin.com/in/abdelrahman-omar-sec/" target="_blank" rel="noopener noreferrer">
+        <span class="term-prompt">root@system:~$</span> ssh <span class="social__handle">linkedin.com/in/abdelrahman-omar-sec</span>
+        <span class="social__arrow">[&gt;]</span>
+      </a>
+      <footer class="footer mono" data-testid="footer">
+        <span>© 2026 VEXUM</span>
+        <span class="dim">// no system is safe</span>
+      </footer>
+    </section>
+
+  </main>
+
+  <script src="three.min.js"></script>
+  <script src="hero3d.js"></script>
+  <script src="script.js"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1c1654c5a1af91d',t:'MTc4NDIwODk4NQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
